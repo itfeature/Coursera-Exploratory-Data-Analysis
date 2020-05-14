@@ -198,7 +198,7 @@ plot(svd1$d^2 / sum(svd1$d^2), pch = 19,
      xlab = "Singular vector", ylab = "Variance explained")
 
 # Create approximatation
-vd1 <- svd(scale(faceData))
+svd1 <- svd(scale(faceData))
 ## Note that %*% is matrix multiplication
 
 # Here svd1$d[1] is a constant
